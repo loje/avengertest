@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+		<meta http-equiv="pragma" content="no-cache"> 
+		<meta http-equiv="cache-control" content="no-store, must-revalidate"> 
+		<title>神盾局特工招募测试</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="htttp://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/fastclick.js"></script>
+		<script type="text/javascript">
+			window.addEventListener( "load", function() {
+				FastClick.attach( document.body );
+			}, false );
+		</script>
+
+		<link href="css/style.css" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<div class="loader" id="loader" style="background-color:#000;">
+			<div class="loading" style="color:#fff;">Loading...</div>
+		</div>
+		<script type="text/javascript">
+			var h = document.documentElement.clientHeight;
+			document.getElementById("loader").style.height= h + "px"; //设置宽度
+		</script>
+
+
+		<!-- <div class="shiled-party" id="shiledparty">
+
+			<div class="chiose">
+				<div class="shiled-scan">
+					
+				</div>
+				<div class="shiled-party-map" id="shiledpartymap"></div>
+				<div class="shiled-map-btn">
+					<button class="btn east" id="east">东区</button>
+					<button class="btn west" id="west">西区</button>
+					<button class="btn north" id="north">北区</button>
+				</div>
+				<button class="btn" id="go" style="display:none;">加入此阵营</button>
+			</div>
+			<div class="container shiled" id="shiled"></div>
+			<div class="shiled-party-bg" id="shiledpartybg"></div>
+		</div> -->
+
+
+		<div class="shiled-page" id="shiledpage">
+			<div class="container mession-action" id="messionaction" style="display:none;">
+				<div class="yuan" id="yuanstart">
+					<div class="yuan1" id="yuanstart1">
+						<div class="yuan2" id="yuanstart2">
+							<div class="yuan3" id="yuanstart3">
+								
+							</div>
+						</div>
+					</div>
+					<div class="yuan4" id="yuan">
+						<div class="timeout">3</div>
+						<!--<img src="image/zhiwen.png">
+						<p>MESSION ACTION</p>-->
+					</div>
+				</div>
+
+				<div class="coming soon" id="coming" style="display:none;">
+					<div id="content" class="col-xs-12 fullwidth">
+						<div class="expand"></div>
+					</div>
+					<p>与总部通讯中....</p>
+				</div>
+			</div>
+			<div class="container shiled" id="shiled">
+				<div class="shiled-top">
+					<div class="xinhao"><img src="image/xinhao.png"></div>
+					<div class="wenjian"><img src="image/wenjian.png"></div>
+					<div class="dianchi"><img src="image/dianchi.png"></div>
+				</div>
+
+				<div class="shiled-bg" id="shiledbg">
+					<div class="shiledbg-top">
+						<div class="shiledbg-top-back">
+							< BACK
+						</div>
+						<div class="shiledbg-top-contact">
+							CONTACT
+						</div>
+					</div>
+					<div class="line-through">
+			            <fieldset>
+			                <legend id="time"></legend>
+			            </fieldset>
+			        </div>
+
+					<div class="shiledmsg msg1">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object shileduser" src="image/shileduser.png" alt="...">
+							</div>
+							<div class="media-body shiledmsg-content">
+								<p>MISSION ALERT.<br />EXTRACTION IMMINENT.<br />FROM A SHILED TEST.:)<span class="msgtime"></span></p>
+							</div>
+						</div>
+			        </div>
+			        <div class="shiledmsg msg2">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object shileduser" src="image/shileduser.png" alt="...">
+							</div>
+							<div class="media-body shiledmsg-content">
+								<p>特工，欢迎你加入神盾局深职分部<br />我是负责引导你的导师<br />菲尔 · 科尔森<span class="msgtime"></span></p>
+							</div>
+						</div>
+			        </div>
+			        <div class="shiledmsg msg3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object shileduser" src="image/shileduser.png" alt="...">
+							</div>
+							<div class="media-body shiledmsg-content">
+								<p>那么<br>首先请选择你想要入职的部门<br/>然后接受入职测试<span class="msgtime"></span></p>
+							</div>
+						</div>
+			        </div>
+			        <div class="shiledmsg msg4">
+						<div class="shiled-map-btn">
+							<div class="chiose">
+								<button class="btn east" id="east">东区研发部</button>
+								<button class="btn west" id="west">西区情报部</button>
+								<button class="btn north" id="north">北区实验室</button>
+								<div class="chioseintro" id="chioseintro" style="display:none;">
+									<div class="textme">
+										<p id="textbox"><span id="text" class="text"></span></p>
+										<div class="textbtn">
+											<button class="btn iwantyou" id="iwantyou">去这个部门</button>
+											<button class="btn sorry" id="sorry">....还是去其他部门好了</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			        </div>
+
+			        <!-- <div class="shiledmsg msg3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object shileduser" src="image/shileduser.png" alt="...">
+							</div>
+							<div class="media-body shiledmsg-content">
+								<p>本测试主要用于确定被测试者的职业兴趣倾向，并帮助被测试者选择适合其职业兴趣的专业及职业发展方向。<span class="msgtime"></span></p>
+							</div>
+						</div>
+			        </div> -->
+			      <!--   <div class="shiledmsg msg4">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object shileduser" src="image/shileduser.png" alt="...">
+							</div>
+							<div class="media-body shiledmsg-content">
+								<p>如果準備好，請開始測試:)<span class="msgtime"></span></p>
+							</div>
+						</div>
+			        </div> -->
+
+					<div class="shiled-point1">
+						<img src="image/shiled_point.png">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point2">
+						<img src="image/shiled_point.png">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top1">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top2">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top3">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top4">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top5">
+						<img src="image/shiled_point.png">
+						<img src="image/shiled_point.png">
+					</div>
+					<div class="shiled-point-top6">
+						<img src="image/shiled_point.png">
+						<img src="image/shiled_point.png">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.1.11.3.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/swiper.3.1.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#shiledpage").height($(window).height());
+				$("#loader").removeAttr("style");
+				$("#loader").attr("style","display:none;");
+			})
+		</script>
+	</body>
+</html>

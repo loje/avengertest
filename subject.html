@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+		<meta http-equiv="pragma" content="no-cache"> 
+		<meta http-equiv="cache-control" content="no-store, must-revalidate"> 
+		<title>神盾局特工招募测试</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Swiper -->
+		<link href="css/swiper.3.1.2.min.css" rel="stylesheet">
+
+		<!-- button -->
+		<link href="css/buttons.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="htttp://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/fastclick.js"></script>
+		<script type="text/javascript">
+			window.addEventListener( "load", function() {
+				FastClick.attach( document.body );
+			}, false );
+		</script>
+
+		<link href="css/style.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="loader" id="loader" style="background-color:#000;">
+			<div class="loading" style="color:#fff;">Loading...</div>
+			<!-- <div class="container mession-action" id="messionaction" style="display:none;">
+				<div class="yuan">
+					<div class="yuan1">
+						<div class="yuan2">
+							<div class="yuan3"></div>
+						</div>
+					</div>
+					<a class="yuan4" id="yuan">
+						<img src="image/zhiwen.png">
+						<p>MESSION ACTION</p>
+					</a>
+				</div>
+
+				<div class="coming soon" id="coming" style="display:none;">
+					<div id="content" class="col-xs-12 fullwidth">
+						<div class="expand"></div>
+					</div>
+					<p>COMMUNICATING....</p>
+				</div>
+			</div> -->
+		</div>
+		<script type="text/javascript">
+			var h = document.documentElement.clientHeight;
+			document.getElementById("loader").style.height= h + "px"; //设置宽度
+		</script>
+
+
+		<div class="container subject-page" id="subjectShiled">
+			<div class="subject-shiled" id="shiledbg">
+
+				<div class="coming" id="coming">
+					<div class="col-xs-12 fullwidth timing">
+						<div class="timing-expand" id="timingexpand"></div>
+					</div>
+					<p>COMLETED <span id="percent">1/30</span></p>
+				</div>
+
+				<form id="radioform">
+					<div class="topic">
+						<div class="title">
+							<div class="title-box">
+								<p>当我投入到创造性工作时，经常会忘却一切。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option1" id="chioseradio15" value="2.1"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option1" id="chioseradio14" value="1.7"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option1" id="chioseradio13" value="1.2"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option1" id="chioseradio12" value="0.7"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option1" id="chioseradio11" value="0"> <span>非常不符合</span>
+						</label>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢观察各种动植物的生长和发育过程。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option2" id="chioseradio25" value="2.16"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option2" id="chioseradio24" value="1.76"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option2" id="chioseradio23" value="1.26"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option2" id="chioseradio22" value="0.76"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option2" id="chioseradio21" value="0.06"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back2">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢读悬疑小说中的精彩曲折的推理过程</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option3" id="chioseradio35" value="2.16"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option3" id="chioseradio34" value="1.76"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option3" id="chioseradio33" value="1.26"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option3" id="chioseradio32" value="0.76"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option3" id="chioseradio31" value="0.06"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back3">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>和他人共事的时候，相比于事情本身，我更关注他们的切身感受</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option4" id="chioseradio45" value="1.94"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option4" id="chioseradio44" value="1.54"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option4" id="chioseradio43" value="1.04"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option4" id="chioseradio42" value="0.54"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option4" id="chioseradio41" value="-0.22"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back4">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢饲养和照顾小动物。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option5" id="chioseradio55" value="1.94"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option5" id="chioseradio54" value="1.54"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option5" id="chioseradio53" value="1.04"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option5" id="chioseradio52" value="0.54"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option5" id="chioseradio51" value="-0.22"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back5">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢辩论，喜欢像别人宣扬自己独特的观点和简介。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option6" id="chioseradio65" value="2.14"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option6" id="chioseradio64" value="1.74"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option6" id="chioseradio63" value="1.24"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option6" id="chioseradio62" value="0.74"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option6" id="chioseradio61" value="0.04"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back6">返回</div>					
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我通常都会记录下我的收入和支出，并把收据整理好保存下来。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option7" id="chioseradio75" value="1.92"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option7" id="chioseradio74" value="1.52"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option7" id="chioseradio73" value="1.02"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option7" id="chioseradio72" value="0.52"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option7" id="chioseradio71" value="-0.24"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back7">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>对于目标要求清楚的工作，我总是能做的很好。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option8" id="chioseradio85" value="1.92"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option8" id="chioseradio84" value="1.52"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option8" id="chioseradio83" value="1.02"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option8" id="chioseradio82" value="0.52"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option8" id="chioseradio81" value="-0.24"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back8">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢按照说明书组装物品。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option9" id="chioseradio95" value="2.3"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option9" id="chioseradio94" value="1.9"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option9" id="chioseradio93" value="1.4"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option9" id="chioseradio92" value="0.9"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option9" id="chioseradio91" value="0.2"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back9">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我对时尚信息和时尚人物十分关注。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option10" id="chioseradio105" value="2.1"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option10" id="chioseradio104" value="1.7"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option10" id="chioseradio103" value="1.2"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option10" id="chioseradio102" value="0.7"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option10" id="chioseradio101" value="0"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back10">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我经常是聚会活动的组织安排者。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option11" id="chioseradio115" value="1.94"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option11" id="chioseradio114" value="1.54"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option11" id="chioseradio113" value="1.04"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option11" id="chioseradio112" value="0.54"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option11" id="chioseradio111" value="-0.22"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back11">返回</div>	
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>能够成功说服别人让我很有成就感。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option12" id="chioseradio125" value="2.14"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option12" id="chioseradio124" value="1.74"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option12" id="chioseradio123" value="1.24"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option12" id="chioseradio122" value="0.74"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option12" id="chioseradio121" value="0.04"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back12">返回</div>	
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我认为追求的目标应该尽量高些，这样才可能在实践中多获成功。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option13" id="chioseradio135" value="2.14"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option13" id="chioseradio134" value="1.74"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option13" id="chioseradio133" value="1.24"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option13" id="chioseradio132" value="0.74"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option13" id="chioseradio131" value="0.04"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back13">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我比较善于注意和检查细节。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option14" id="chioseradio145" value="1.92"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option14" id="chioseradio144" value="1.52"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option14" id="chioseradio143" value="1.02"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option14" id="chioseradio142" value="0.52"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option14" id="chioseradio141" value="-0.24"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back14">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我生活与工作场所被我布置的朴实、实用。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option15" id="chioseradio155" value="2.3"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option15" id="chioseradio154" value="1.9"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option15" id="chioseradio153" value="1.4"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option15" id="chioseradio152" value="0.9"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option15" id="chioseradio151" value="0.2"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back15">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢把房间装点的很特别，哪怕是一般的色彩、图案都希望能赏心悦目。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option16" id="chioseradio165" value="2.1"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option16" id="chioseradio164" value="1.7"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option16" id="chioseradio163" value="1.2"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option16" id="chioseradio162" value="0.7"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option16" id="chioseradio161" value="0"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back16">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我会尽力寻找一切能够表现自己的创造力的机会和方式。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option17" id="chioseradio175" value="2.1"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option17" id="chioseradio174" value="1.7"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option17" id="chioseradio173" value="1.2"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option17" id="chioseradio172" value="0.7"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option17" id="chioseradio171" value="0"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back17">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>即使我明知结果会与我的期待相悖，我也要探究到底。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option18" id="chioseradio185" value="2.16"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option18" id="chioseradio184" value="1.76"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option18" id="chioseradio183" value="1.26"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option18" id="chioseradio182" value="0.76"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option18" id="chioseradio181" value="0.06"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back18">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>与人交往是我增加阅历的最主要方式。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option19" id="chioseradio195" value="1.94"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option19" id="chioseradio194" value="1.54"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option19" id="chioseradio193" value="1.04"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option19" id="chioseradio192" value="0.54"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option19" id="chioseradio191" value="-0.22"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back19">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>只要收益高，我愿意冒险。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option20" id="chioseradio205" value="2.14"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option20" id="chioseradio204" value="1.74"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option20" id="chioseradio203" value="1.24"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option20" id="chioseradio202" value="0.74"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option20" id="chioseradio201" value="0.04"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back20">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>只有按照规则做事，才会让我心理感觉特别踏实。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option21" id="chioseradio215" value="1.92"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option21" id="chioseradio214" value="1.52"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option21" id="chioseradio213" value="1.02"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option21" id="chioseradio212" value="0.52"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option21" id="chioseradio211" value="-0.24"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back21">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢把物品拆开，再把它们组装恢复原状。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option22" id="chioseradio225" value="2.3"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option22" id="chioseradio224" value="1.9"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option22" id="chioseradio223" value="1.4"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option22" id="chioseradio222" value="0.9"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option22" id="chioseradio221" value="0.2"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back22">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>与其他人相比，我觉得自己在体育方面有优势。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option23" id="chioseradio235" value="2.3"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option23" id="chioseradio234" value="1.9"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option23" id="chioseradio233" value="1.4"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option23" id="chioseradio232" value="0.9"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option23" id="chioseradio231" value="0.2"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back23">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢自己制作一些简单的玩具。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option24" id="chioseradio245" value="2.3"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option24" id="chioseradio244" value="1.9"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option24" id="chioseradio243" value="1.4"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option24" id="chioseradio242" value="0.9"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option24" id="chioseradio241" value="0.2"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back24">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我愿意按自己的想法生活，哪怕是与众不同的。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option25" id="chioseradio255" value="2.1"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option25" id="chioseradio254" value="1.7"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option25" id="chioseradio253" value="1.2"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option25" id="chioseradio252" value="0.7"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option25" id="chioseradio251" value="0"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back25">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>在动手做一件事情之前，我喜欢先在脑中自己思索几遍。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option26" id="chioseradio265" value="2.16"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option26" id="chioseradio264" value="1.76"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option26" id="chioseradio263" value="1.26"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option26" id="chioseradio262" value="0.76"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option26" id="chioseradio261" value="0.06"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back26">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢科普读物或者科技类著作。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option27" id="chioseradio275" value="2.16"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option27" id="chioseradio274" value="1.76"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option27" id="chioseradio273" value="1.26"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option27" id="chioseradio272" value="0.76"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option27" id="chioseradio271" value="0.06"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back27">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>即使可能要花不少时间，我也喜欢帮别人解决他们的困难。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option28" id="chioseradio285" value="1.94"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option28" id="chioseradio284" value="1.54"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option28" id="chioseradio283" value="1.04"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option28" id="chioseradio282" value="0.54"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option28" id="chioseradio281" value="-0.22"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back28">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢看经济类报纸。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option29" id="chioseradio295" value="2.14"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option29" id="chioseradio294" value="1.74"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option29" id="chioseradio293" value="1.24"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option29" id="chioseradio292" value="0.74"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option29" id="chioseradio291" value="0.04"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back29">返回</div>
+					</div>
+
+					<div class="topic" style="display:none;">
+						<div class="title">
+							<div class="title-box">
+								<p>我喜欢定期整理我的通讯录和信件。</p>
+							</div>
+						</div>
+						<label class="radio radio-sub">
+							<input type="radio" name="option30" id="chioseradio305" value="1.92"> <span>非常符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option30" id="chioseradio304" value="1.52"> <span>基本符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option30" id="chioseradio303" value="1.02"> <span>说不清</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option30" id="chioseradio302" value="0.52"> <span>不符合</span>
+						</label>
+						<label class="radio radio-sub">
+							<input type="radio" name="option30" id="chioseradio301" value="-0.24"> <span>非常不符合</span>
+						</label>
+						<div class="btn back" id="back30">返回</div>
+					</div>
+
+					<div class="input-group">
+						<!-- <span class="input-group-addon">常规型</span> -->
+						<input class="form-control" type="hidden" value="" id="changgui">
+					</div>
+					<div class="input-group">
+						<!-- <span class="input-group-addon">企业型</span> -->
+						<input class="form-control" type="hidden" value="" id="qiye">
+					</div>
+					<div class="input-group">
+						<!-- <span class="input-group-addon">社会型</span> -->
+						<input class="form-control" type="hidden" value="" id="shehui">
+					</div>
+					<div class="input-group">
+						<!-- <span class="input-group-addon">实际型</span> -->
+						<input class="form-control" type="hidden" value="" id="shiji">
+					</div>
+					<div class="input-group">
+						<!-- <span class="input-group-addon">研究型</span> -->
+						<input class="form-control" type="hidden" value="" id="yanjiu">
+					</div>
+					<div class="input-group">
+						<!-- <span class="input-group-addon">艺术型</span> -->
+						<input class="form-control" type="hidden" value="" id="yishu">
+					</div>
+
+					<input type="hidden" id="hidden1" value="">
+					<input type="hidden" id="hidden2" value="">
+					<input type="hidden" id="hidden3" value="">
+					<input type="hidden" id="hidden4" value="">
+					<input type="hidden" id="hidden5" value="">
+					<input type="hidden" id="hidden6" value="">
+					<input type="hidden" id="hidden7" value="">
+					<input type="hidden" id="hidden8" value="">
+					<input type="hidden" id="hidden9" value="">
+					<input type="hidden" id="hidden10" value="">
+					<input type="hidden" id="hidden11" value="">
+					<input type="hidden" id="hidden12" value="">
+					<input type="hidden" id="hidden13" value="">
+					<input type="hidden" id="hidden14" value="">
+					<input type="hidden" id="hidden15" value="">
+					<input type="hidden" id="hidden16" value="">
+					<input type="hidden" id="hidden17" value="">
+					<input type="hidden" id="hidden18" value="">
+					<input type="hidden" id="hidden19" value="">
+					<input type="hidden" id="hidden20" value="">
+					<input type="hidden" id="hidden21" value="">
+					<input type="hidden" id="hidden22" value="">
+					<input type="hidden" id="hidden23" value="">
+					<input type="hidden" id="hidden24" value="">
+					<input type="hidden" id="hidden25" value="">
+					<input type="hidden" id="hidden26" value="">
+					<input type="hidden" id="hidden27" value="">
+					<input type="hidden" id="hidden28" value="">
+					<input type="hidden" id="hidden29" value="">
+					<input type="hidden" id="hidden30" value="">
+				</form>
+			</div>
+		</div>
+		<div class="topic result-page" id="resultpage">
+			<div class="swiper-container" id="swipercontainer">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" id="slide1">
+			    		<div class="container the-avenger">
+							<div class="row avenger" id="avengerheight">
+								<div class="col-xs-5" id="avenger"></div>
+								<div class="col-xs-7 avenger-n">
+									<div class="avenger-name" id="avengername"></div>
+								</div>
+								<div class="col-xs-12 mainname-box">
+									<div id="mainname" class="mainname"></div>
+								</div>
+							</div>
+							<div class="result-box" id="personalitybox">
+								<div class="result-box2">
+									<span id="result" class="result"></span>
+								</div>
+							</div>
+			    		</div>
+
+						<div class="swiper-next">
+				    		<i class="iconfont">&#xe601;</i> 人格倾向雷达图
+				    	</div>
+					</div>
+					<div class="swiper-slide" id="slide2">
+			    		<div class="box">
+							<div class="radar" id="radar">
+								<canvas id="myChart" class="mychart" width="400" height="400"></canvas>
+								<p>测评数据为您构建的职业倾向图示中，红色雷达所覆盖的区域代表着您的职业倾向类型，面积越大说明您的职业兴趣越广，同时对所选职业的喜欢程度也不会太强，相反，兴趣越专一，职业的选择面就越窄，同时对于所选职业的喜好程度也就越强。</p>
+								<!-- <div class="testform-btn">
+									<button type="button" class="button button-3d post" id="report">获取完整版报告</button>
+								</div> -->
+							</div>
+						</div>
+						<div class="swiper-next">
+							<i class="iconfont">&#xe601;</i> 人物性格说明
+						</div>
+					</div>
+					<div class="swiper-slide" id="slide3">
+						<div class="box">
+							<div class="herointro" id="abouthero">
+								<div class="media">
+									<div class="media-left">
+										<div class="realman media-object" id="realman"></div>
+									</div>
+									<div class="media-body">
+										<div class="media-heading connecting">来自 <span id="talkman"></span> 的讯息</div>
+									</div>
+									<div class="shiled-scan"></div>
+								</div>
+								<div class="talk" id="talk">
+									
+								</div>
+								<div class="guide row">
+									<div class="col-xs-12 task">
+										<div class="taskbtn" id="taskbtn">获取任务与机密档案</div>
+									</div>
+									<!-- <div class="col-xs-6 archives">
+										<div class="archivesbtn">文档</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<!-- <div class="lastbtn">
+							<div class="guanzhu btn" id="guanzhu">了解SHILED日常</div>
+							<div class="fenxiang btn" id="fenxiang">通知其他特工</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="qrcodebox" id="qrcodebox" style="display:none;">
+				<div class="qrcode">
+					<img src="image/qrcode.jpg" />
+					
+				</div>
+				<div class="qrcodehidden">
+					<div class="qrcodehiddenbtn" id="qrcodehiddenbtn">BACK</div>
+				</div>
+			</div>
+
+			<div class="guanzhubox" id="guanzhubox" style="display:none;">
+				<div class="fury">
+					<img src="image/fury.png">
+					<p>特工，欢迎来到神盾局<br />长按二维码了解详情</p>
+					<div class="qrcode">
+						<img src="image/qrcode.jpg">
+					</div>
+					<div class="exitbox">
+						<a href="#" class="exit" id="exit">EXIT</a>
+					</div>
+				</div>
+			</div>
+			<div class="fenxiangbox" id="fenxiangbox" style="display:none;">
+				<div class="hill">
+					<img src="image/hill.png">
+					<div class="p">
+						<p>特工</p>
+						<p>右上角分享到朋友圈</p>
+						<p>号召更多特工加入我们</p>
+					</div>
+				</div>
+			</div>
+			<div class="result-bg"></div>
+		</div>
+
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.1.11.3.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/Chart.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/swiper.3.1.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#loader").removeAttr("style");
+				$("#loader").attr("style","display:none;");
+			})
+		</script>
+	</body>
+</html>

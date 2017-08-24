@@ -1,0 +1,1880 @@
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{font-family:"iconfont";
+font-size:16px;font-style:normal;}
+
+
+
+body{
+	-webkit-tap-highlight-color:transparent;
+}
+/**加载动画**/
+.loader {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+.loaderimg {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+}
+
+/**图片预加载**/
+.hiddenme{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    z-index: 0;
+}
+.hiddenme div{
+	width: 1px;
+	height: 1px;
+}
+.hiddenme div img{
+	width: 100%;
+	height: 100%;
+}
+.pic1{
+	background: url(../image/png/blackwidow.png) no-repeat -9999px -9999px; 
+}
+.pic2{
+	background: url(../image/png/cap.png) no-repeat -9999px -9999px; 
+}
+.pic3{
+	background: url(../image/png/hawkeye.png) no-repeat -9999px -9999px; 
+}
+.pic4{
+	background: url(../image/png/hulk.png) no-repeat -9999px -9999px; 
+}
+.pic5{
+	background: url(../image/png/ironman.png) no-repeat -9999px -9999px; 
+}
+.pic6{
+	background: url(../image/png/loki.png) no-repeat -9999px -9999px; 
+}
+.pic7{
+	background: url(../image/png/thor.png) no-repeat -9999px -9999px; 
+}
+.pic11{
+	background: url(../image/name/blackwidow.png) no-repeat -9999px -9999px; 
+}
+.pic12{
+	background: url(../image/name/cap.png) no-repeat -9999px -9999px; 
+}
+.pic13{
+	background: url(../image/name/hawkeye.png) no-repeat -9999px -9999px; 
+}
+.pic14{
+	background: url(../image/name/hulk.png) no-repeat -9999px -9999px; 
+}
+.pic15{
+	background: url(../image/name/ironman.png) no-repeat -9999px -9999px; 
+}
+.pic16{
+	background: url(../image/name/loki.png) no-repeat -9999px -9999px; 
+}
+.pic17{
+	background: url(../image/name/thor.png) no-repeat -9999px -9999px; 
+}
+
+
+
+.container{
+	padding-left: 0px;
+    padding-right: 0px;
+	position: relative;
+	background-color: #69110f;
+}
+.marvel{
+	position: absolute;
+	width: 100%;
+	padding-top: 40%;
+	text-align: center;
+	font-size: 60px;
+}
+.loadingbg
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #69110f;
+	vertical-align: middle;
+	text-align: center;
+
+
+}
+
+.loadingbg-animation{
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+
+	animation: marvelloading 3s linear ;
+	-webkit-animation: marvelloading 3s linear ;	/* Safari 和 Chrome */
+}
+
+@keyframes marvelloading
+{
+0%  {background-image: url(../image/1.jpg);opacity:1;}
+5%	{background-image: url(../image/2.jpg);opacity:0.95;}
+10% {background-image: url(../image/3.jpg);opacity:0.9;}
+15% {background-image: url(../image/4.jpg);opacity:0.85;}
+20% {background-image: url(../image/5.jpg);opacity:0.8;}
+25% {background-image: url(../image/1.jpg);opacity:0.75;}
+30% {background-image: url(../image/2.jpg);opacity:0.7;}
+35% {background-image: url(../image/3.jpg);opacity:0.65;}
+40% {background-image: url(../image/4.jpg);opacity:0.6;}
+45% {background-image: url(../image/5.jpg);opacity:0.55;}
+50% {background-image: url(../image/1.jpg);opacity:0.5;}
+55% {background-image: url(../image/2.jpg);opacity:0.45;}
+60% {background-image: url(../image/3.jpg);opacity:0.4;}
+65% {background-image: url(../image/4.jpg);opacity:0.35;}
+70% {background-image: url(../image/5.jpg);opacity:0.3;}
+75% {background-image: url(../image/1.jpg);opacity:0.25;}
+80% {background-image: url(../image/2.jpg);opacity:0.2;}
+85% {background-image: url(../image/3.jpg);opacity:0.15;}
+90% {background-image: url(../image/4.jpg);opacity:0.1;}
+95% {background-image: url(../image/5.jpg);opacity:0.05;}
+100% {background-image: url(../image/1.jpg);opacity:0;}
+}
+@-webkit-keyframes marvelloading
+{
+0%  {background-image: url(../image/1.jpg);-webkit-opacity:1;}
+5%	{background-image: url(../image/2.jpg);-webkit-opacity:0.95;}
+10% {background-image: url(../image/3.jpg);-webkit-opacity:0.9;}
+15% {background-image: url(../image/4.jpg);-webkit-opacity:0.85;}
+20% {background-image: url(../image/5.jpg);-webkit-opacity:0.8;}
+25% {background-image: url(../image/1.jpg);-webkit-opacity:0.75;}
+30% {background-image: url(../image/2.jpg);-webkit-opacity:0.7;}
+35% {background-image: url(../image/3.jpg);-webkit-opacity:0.65;}
+40% {background-image: url(../image/4.jpg);-webkit-opacity:0.6;}
+45% {background-image: url(../image/5.jpg);-webkit-opacity:0.55;}
+50% {background-image: url(../image/1.jpg);-webkit-opacity:0.5;}
+55% {background-image: url(../image/2.jpg);-webkit-opacity:0.45;}
+60% {background-image: url(../image/3.jpg);-webkit-opacity:0.4;}
+65% {background-image: url(../image/4.jpg);-webkit-opacity:0.35;}
+70% {background-image: url(../image/5.jpg);-webkit-opacity:0.3;}
+75% {background-image: url(../image/1.jpg);-webkit-opacity:0.25;}
+80% {background-image: url(../image/2.jpg);-webkit-opacity:0.2;}
+85% {background-image: url(../image/3.jpg);-webkit-opacity:0.15;}
+90% {background-image: url(../image/4.jpg);-webkit-opacity:0.1;}
+95% {background-image: url(../image/5.jpg);-webkit-opacity:0.05;}
+100% {background-image: url(../image/1.jpg);-webkit-opacity:0;}
+}
+
+
+
+
+.marvel-logo{
+	display: inline-block;
+	padding: 2% 5% 2% 2%;
+	color:#fff;
+	font-size: 120%;
+	font-weight: 600;
+	text-align: center;
+	border:1px solid #FD9595;
+	letter-spacing: -10px;
+
+	animation: marvellogo 3s linear ;
+	-moz-animation: marvellogo 3s linear ;	/* Firefox */
+	-webkit-animation: marvellogo 3s linear ;	/* Safari 和 Chrome */
+	-o-animation: marvellogo 3s linear ;	/* Opera */
+}
+
+
+@keyframes marvellogo
+{
+	0%   {opacity:0;/*font-size: 100%;*/}
+	25%  {opacity:0.2;/*font-size: 105%;*/}
+	50%  {opacity:0.5;/*font-size: 110%;*/}
+	100% {opacity:1;/*font-size: 120%;*/}
+}
+
+
+
+@-webkit-keyframes marvellogo /* Safari 和 Chrome */
+{
+	0%   {-webkit-opacity:0;/*font-size: 100%;*/}
+	25%  {-webkit-opacity:0.2;/*font-size: 105%;*/}
+	50%  {-webkit-opacity:0.5;/*font-size: 110%;*/}
+	100% {-webkit-opacity:1;/*font-size: 120%;*/}
+}
+
+.loading{
+	display: block;
+}
+
+
+
+
+
+
+/*shiled*/
+.shiled-party{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+}
+.shiled-party-bg{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 80%;
+    background: url(../image/bg_line.png),url(../image/shiledlogo_bg.png) no-repeat 50% 50%;
+    background-position: 50%;
+}
+.shiled-party-map{
+	margin: auto;
+	margin-bottom: 10%;
+
+	height: 40%;
+	border:1px solid #fff;
+    background-color: rgba(13, 92, 123, 0.63);
+    border: 1px solid rgba(120, 199, 236, 0.89);
+	box-shadow: 0px 0px 40px #276D7D inset,0px 0px 20px #81E6FD;;
+	background-image:  url(../image/shiledmap.png);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.75;
+	z-index: 1;
+	-webkit-animation: shiledmapwidth .5s cubic-bezier(1, 0, 1, 1) ,shiledmapopacity .5s linear infinite alternate;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes shiledmapwidth /* Safari 和 Chrome */
+{
+from{width: 1%;}
+to {width: 100%;}
+}
+@-webkit-keyframes shiledmapopacity /* Safari 和 Chrome */
+{
+from{opacity: 0.75;}
+to {opacity: 0.45;}
+}
+
+
+.shiled-scan{
+	position: fixed;
+    top: -5%;
+    right: -25px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../image/scan.png);
+    background-size: 100%;
+    background-position: 50%;
+    z-index: 5;
+    opacity: 0.25;
+	-webkit-animation:scan 5s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes scan /* Safari 和 Chrome */
+{
+from{-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+
+.shiled-map-btn{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+/*.chiose {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}*/
+.chiose{
+	position: relative;
+    padding: 20px 5px 25px 5px;
+    width: 100%;
+    background-color: rgba(13, 92, 123, 0.28);
+    border: 1px solid rgba(120, 199, 236, 0.89);
+    box-shadow: 0px 0px 40px rgba(39, 109, 125, 0.82) inset,0px 0px 20px rgba(129, 230, 253, 0.47);
+}
+.chioseintro{
+    position: fixed;
+    display: table;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 6;
+}
+.text{
+	color: #65D1D6;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.chiose button{
+    margin: 0px 2%;
+    padding: 6px 0;
+    width: 25%;
+    height: 40px;
+    border: 1px solid rgba(9, 199, 218, 0.25);
+    box-shadow: 0 7px 0 rgba(13, 102, 165, 0.34), 0 8px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 7px 0 rgba(13, 102, 165, 0.34), 0 8px 3px rgba(0, 0, 0, 0.2);
+    color: #65D1D6;
+    background-color: rgba(11, 138, 167, 0.51);
+    font-size: 12px;
+}
+.textme{
+    display: table-cell;
+    margin: auto;
+    padding: 15px;
+    padding-top: 10px;
+    width: 75%;
+    text-align: left;
+    vertical-align: middle;
+}
+.textme button{
+	padding: 6px 12px;
+	width: auto;
+}
+.textbtn{
+	position: fixed;
+	bottom: 5%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+.chiose p{
+	padding: 20px 15px 25px 15px;
+    width: 100%;
+    background-color: rgba(13, 92, 123, 0.28);
+    border: 1px solid rgba(120, 199, 236, 0.89);
+    box-shadow: 0px 0px 40px rgba(39, 109, 125, 0.82) inset,0px 0px 20px rgba(129, 230, 253, 0.47);
+}
+
+.eastpoint{
+	-webkit-animation: eastpoint .5s cubic-bezier(1, 0, 1, 1);;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes eastpoint /* Safari 和 Chrome */
+{
+to {background-size: 100%;background-position: -100px 0px;}
+}
+.westpoint{
+	-webkit-animation: westpoint .5s cubic-bezier(1, 0, 1, 1);;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes westpoint /* Safari 和 Chrome */
+{
+to {background-size: 100%;background-position: 50px -120px;}
+}
+.northpoint{
+	-webkit-animation: northpoint .5s cubic-bezier(1, 0, 1, 1);;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes northpoint /* Safari 和 Chrome */
+{
+to {background-size: 100%;background-position: 80px 100px;}
+}
+
+.shiled-page {
+    background-color: #000;
+}
+.shiled{
+	position: relative;
+	padding: 0 3%;
+	background-color: #000;
+	max-width: 640px;
+	height: 100%;
+}
+.shiled-top{
+	padding: 2% 0;
+	background-image: url(../image/shiled-page.png);
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+}
+.shiled-top div{
+	display: inline-block;
+	margin: 0 1%;
+}
+.shiled-top div.dianchi{
+	float: right;
+}
+.shiled-bg{
+	position: relative;
+	height: 80%;
+	background: url(../image/bg_line.png),url(../image/shiledlogo_bg.png) no-repeat 50% 50%;
+	background-position: 50%;
+}
+
+.line-through {
+	padding-bottom: 8px;
+    text-align: center;
+}
+
+.line-through fieldset {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.line-through fieldset legend {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 0px;
+    width: auto;
+    color: rgba(255,255,255,0.5);
+    padding: 0 10px;
+    font-size: 12px;
+}
+.shiledbg-top{
+    position: relative;
+    width: 100%;
+    height: 24px;
+    padding-top: 6px;
+    font-size: 12px;
+    border: 1px solid #1E3D4C;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.shiledbg-top div{
+	font-family: Consolas, "Courier New", Courier, monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+	background-color: #000;
+}
+.shiledbg-top-back{
+	position: absolute;
+	left: 2%;
+}
+.shiledbg-top-contact{
+	position: absolute;
+	right: 2%;
+}
+
+.shiledmsg{
+	margin-bottom: 6%;
+}
+.shiledmsg .media .media-left img.shileduser{
+	border: 2px solid #fff;
+	border-radius: 40px;
+}
+.shiledmsg .media .shiledmsg-content p{
+	padding: 4px 8px;
+	min-height: 60px;
+	font-family: Consolas, "Courier New", Courier, monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+	color: #e3d18f;
+	font-size: 12px;
+	background-color: #333;
+	letter-spacing: 1px;
+	position: relative;
+}
+.shiledmsg .media .shiledmsg-content p span{
+	position: absolute;
+	bottom: 2px;
+	right: 4px;
+	font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+.shiled-point1{
+	position: absolute;
+	left: -2%;
+	top:50%;
+}
+.shiled-point1 img {
+    display: block;
+}
+.shiled-point2{
+	position: absolute;
+	right: -2%;
+	top:50%;
+}
+.shiled-point2 img {
+    display: block;
+}
+.shiled-point-top1{
+	position: absolute;
+	left: 5%;
+	top:-2%;
+}
+.shiled-point-top2{
+	position: absolute;
+	right: 5%;
+	top:-2%;
+}
+.shiled-point-top3{
+	position: absolute;
+	left: 15%;
+	top:-2%;
+}
+.shiled-point-top4{
+	position: absolute;
+	right: 15%;
+	top:-2%;
+}
+.shiled-point-top5{
+	position: absolute;
+	left: 40%;
+	top:-2%;
+}
+.shiled-point-top6{
+	position: absolute;
+	right: 40%;
+	top:-2%;
+}
+
+.msg1{
+	opacity: 0;
+	animation: msgone 0.25s ease;
+	animation-delay:0s;
+	animation-fill-mode:forwards;
+	-webkit-animation: msgone 0.25s ease;	/* Safari 和 Chrome */
+	-webkit-animation-delay:0s;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes msgone /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@-webkit-keyframes msgone /* Safari 和 Chrome */
+{
+from {-webkit-opacity: 0}
+to {-webkit-opacity: 1}
+}
+.msg2{
+	opacity: 0;
+	animation: msgone 0.25s ease;
+	animation-delay:0s;
+	animation-fill-mode:forwards;
+	-webkit-animation: msgtwo 0.25s ease;	/* Safari 和 Chrome */
+	-webkit-animation-delay:1s;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes msgtwo /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@-webkit-keyframes msgtwo /* Safari 和 Chrome */
+{
+from {-webkit-opacity: 0}
+to {-webkit-opacity: 1}
+}
+.msg3{
+	opacity: 0;
+	animation: msgthree 0.25s ease;	/* Safari 和 Chrome */
+	animation-delay:1s;
+	animation-fill-mode:forwards;
+	-webkit-animation: msgthree 0.25s ease;	/* Safari 和 Chrome */
+	-webkit-animation-delay:2s;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes msgthree /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@-webkit-keyframes msgthree /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+.msg4{
+	opacity: 0;
+	animation: msgfour 0.25s ease;	/* Safari 和 Chrome */
+	animation-delay:1.5s;
+	animation-fill-mode:forwards;
+	-webkit-animation: msgfour 0.25s ease;	/* Safari 和 Chrome */
+	-webkit-animation-delay:3s;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes msgfour /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@-webkit-keyframes msgfour /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+
+.mession-action {
+    position: fixed;
+    padding-top: 40%;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 7;
+    text-align: center;
+	opacity: 0;
+	animation: msgfour 0.25s ease;	/* Safari 和 Chrome */
+	/*-webkit-animation-delay:2s;*/
+	animation-fill-mode:forwards;
+	-webkit-animation: msgfour 0.25s ease;	/* Safari 和 Chrome */
+	/*-webkit-animation-delay:2s;*/
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes msgfour /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+@-webkit-keyframes msgfour /* Safari 和 Chrome */
+{
+from {opacity: 0}
+to {opacity: 1}
+}
+
+.mession-action .yuan1{
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border:5px dotted #C55D1C;
+	border-radius: 100px;
+	background: url(../image/shiledlogo_bg.png) no-repeat 50% 50%;
+	background-size: cover;
+	box-shadow: 0px 0px 5px #fff;
+	animation: actionone 5s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation: actionone 5s linear infinite;	/* Safari 和 Chrome */
+}
+@keyframes actionone /* Safari 和 Chrome */
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes actionone /* Safari 和 Chrome */
+{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+
+.mession-action .yuan2{
+	margin: auto;
+	width: 190px;
+	height: 190px;
+	border:3px dotted #EFC585;
+	box-shadow: 0px 0px 60px rgba(197, 158, 48, 0.54);
+	border-radius: 100px;
+	animation: actiontwo 2.5s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation: actiontwo 2.5s linear infinite;	/* Safari 和 Chrome */
+}
+@keyframes actiontwo /* Safari 和 Chrome */
+{
+from {-transform: rotateY(0deg);}
+to {transform: rotateY(360deg);}
+}
+@-webkit-keyframes actiontwo /* Safari 和 Chrome */
+{
+from {-webkit-transform: rotateY(0deg);}
+to {-webkit-transform: rotateY(360deg);}
+}
+.mession-action .yuan3{
+	margin: auto;
+	width: 180px;
+	height: 180px;
+	border:1px dotted #999;
+	border-radius: 100px;
+	animation: actionthree 1.2s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation: actionthree 1.2s linear infinite;	/* Safari 和 Chrome */
+}
+@keyframes actionthree /* Safari 和 Chrome */
+{
+from {transform: rotateX(0deg);}
+to {transform: rotateX(360deg);}
+}
+@-webkit-keyframes actionthree /* Safari 和 Chrome */
+{
+from {-webkit-transform: rotateX(0deg);}
+to {-webkit-transform: rotateX(360deg);}
+}
+.mession-action .yuan{
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+.mession-action .yuan4 {
+    display: table;
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0px 0px 20px #fff;
+    font-size: 12px;
+    font-size: 12px;
+    animation: fontlight 1.2s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation: fontlight 1.2s linear infinite;	/* Safari 和 Chrome */
+}
+@keyframes fontlight /* Safari 和 Chrome */
+{
+from {text-shadow: 0px 0px 0px #fff;}
+to {text-shadow: 0px 0px 20px #fff;}
+}
+@-webkit-keyframes fontlight /* Safari 和 Chrome */
+{
+from {text-shadow: 0px 0px 0px #fff;}
+to {text-shadow: 0px 0px 20px #fff;}
+}
+
+.timeout {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+	font-size: 72px;
+}
+
+
+.mession-action .yuan4 img{
+	height: 100px;
+	opacity: 0.5;
+	animation: zhiwen 2.5s linear infinite;	/* Safari 和 Chrome */
+	-webkit-animation: zhiwen 2.5s linear infinite;	/* Safari 和 Chrome */
+}
+@keyframes zhiwen /* Safari 和 Chrome */
+{
+0% {opacity: 0.25}
+50% {opacity: 1}
+100% {opacity: 0.25}
+}
+@-webkit-keyframes zhiwen /* Safari 和 Chrome */
+{
+0% {opacity: 0.25}
+50% {opacity: 1}
+100% {opacity: 0.25}
+}
+
+
+.mession-action .yuan4 p{
+	padding-top: 2%;
+}
+
+
+.subject-page{
+	/*padding: 1% 2%;*/
+	width:100%;
+	max-width: 640px;
+	background: url(../image/bg_line.png) 50% 50%;
+	background-color: #000;
+	z-index: 3;
+}
+.subject-shiled{
+	width: 100%;
+	height: 100%;
+	background: url(../image/shiledlogo_bg.png) no-repeat 50% 50%;
+	background-size: 100%;
+	animation: subjectbg .5s linear;	/* Safari 和 Chrome */
+	-webkit-animation: subjectbg .5s linear;	/* Safari 和 Chrome */
+}
+@keyframes subjectbg /* Safari 和 Chrome */
+{
+0% {opacity: 0;background-size: 90%;}
+100% {opacity: 1;background-size: 100%;}
+}
+@-webkit-keyframes subjectbg /* Safari 和 Chrome */
+{
+0% {opacity: 0;background-size: 90%;}
+100% {opacity: 1;background-size: 100%;}
+}
+
+.tipspage{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width:100%;
+	z-index: 5;
+	background: url(../image/bg_line.png) 50% 50%;
+    background-color: #1d2b2a;
+}
+.tipsbox{
+	position: relative;
+    width: 100%;
+    height: 3px;
+    overflow: hidden;
+    background-color: rgba(29, 43, 42, 0.5);
+    background-image: url(../image/404-stripe.png);
+    background-repeat: repeat-x, repeat;
+    background-position: 0 0%;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 6px #567D88 inset;
+    text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+	-webkit-animation: skip 7s linear infinite, flicker 0.05s steps(2, start) infinite, addheight 1s linear ;
+	animation: skip 7s linear infinite, flicker 0.05s steps(2, start) infinite, addheight 1s linear ;
+	animation-fill-mode:forwards;
+	animation-delay:1s; /* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-delay:1s; /* Safari 和 Chrome */
+}
+.tipstyped{
+    position: absolute;
+    bottom: 0px;
+    padding: 0 15px;
+    width: 100%;
+	font-family: Inconsolata, "Lucida Console", Monaco, Courier, monospace;
+	line-height: 2em;
+	letter-spacing: 1px;
+	color: #C1ECEC;
+	-webkit-font-smoothing: none;
+	animation: tipsboxbg .5s linear;	/* Safari 和 Chrome */
+	-webkit-animation: tipsboxbg .5s linear;	/* Safari 和 Chrome */
+}
+@keyframes tipsboxbg /* Safari 和 Chrome */
+{
+0% {opacity: 0;background-size: 90%;}
+100% {opacity: 1;background-size: 100%;}
+}
+@-webkit-keyframes tipsboxbg /* Safari 和 Chrome */
+{
+0% {-webkit-opacity: 0;background-size: 90%;}
+100% {-webkit-opacity: 1;background-size: 100%;}
+}
+
+
+.typed-cursor {
+    display: inline-block;
+    }
+
+
+@-webkit-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+
+@-webkit-keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+
+@-webkit-keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+
+@-webkit-keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+@-webkit-keyframes addheight {
+  to {
+    height: 80%;
+  }
+}
+@keyframes addheight {
+  to {
+    height: 80%;
+  }
+}
+
+.tipsbtn{
+    position: fixed;
+    left: 0px;
+    bottom: -1000px;
+    padding: 3%;
+    width: 100%;
+    height: 13%;
+    animation: start 0.5s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    -webkit-animation: start 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 10s;
+}
+@keyframes start {
+	from{
+		bottom: -1000px;
+	}
+  to {
+    bottom: 5px;
+  }
+}
+@-webkit-keyframes start {
+	from{
+		bottom: -1000px;
+	}
+  to {
+    bottom: 5px;
+  }
+}
+.start{
+	padding: 5%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(218, 125, 9, 0.25);
+    /* box-shadow: 0px 0px 20px #F1CB5E inset; */
+    box-shadow: 0 7px 0 rgba(165, 86, 13, 0.3), 0 8px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 7px 0 rgba(165, 86, 13, 0.3), 0 8px 3px rgba(0, 0, 0, 0.2);
+    color: #D6B065;
+    background-color: rgba(134, 79, 10, 0.33);
+    background-image: url(../image/start.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 35%;
+    opacity: 0;
+    animation: sh 1s linear infinite alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 10.5s;
+    -webkit-animation: sh 1s linear infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 10.5s;
+}
+@keyframes sh {
+	from{opacity: 0.5;}
+  to {opacity: 1;}
+}
+@-webkit-keyframes sh {
+	from{opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+.topic{
+	position: relative;
+	padding: 3% 2%;
+}
+
+.title{
+	margin: 6% 3% 10% 3%;
+    min-height: 60px;
+    background-color: rgba(13, 92, 123, 0.63);
+    border: 1px solid rgba(120, 199, 236, 0.89);
+    box-shadow: 0px 0px 20px #81E6FD;
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+}
+.title-box{
+    padding: 2% 4%;
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    box-shadow: 0px 0px 40px #276D7D inset;
+}
+.title-box p{
+	margin: 0px;
+	color: #fff;
+	letter-spacing: 1px;
+	transform:skewX(10deg);
+	-webkit-transform:skewX(10deg);
+
+}
+.radio-sub input{
+	margin-left: 0px;
+}
+
+.radio-sub{
+	margin-top: 0px !important;
+	margin-bottom: 8%;
+	padding: 2% 2% 2% 30px;
+	background-color: rgba(204, 51, 51, 0.61);
+    border: 1px solid #cc3333;
+    border-radius: 100px;
+}
+
+
+.radio-sub span{
+	color: #fff;
+	letter-spacing: 2px;
+
+}
+
+
+.mychart{
+	width: 75% !important;
+}
+.comeon {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+
+    animation: comeon 1s linear;
+	animation-delay:9s;
+	animation-fill-mode:forwards;
+    -webkit-animation: comeon 1s linear;
+	-webkit-animation-delay:9s;
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes comeon {
+	0%{opacity: 1;bottom: 0px;}
+	95% {opacity: 0;bottom: 0px;}
+	100% {opacity: 0;bottom: -1000px;}
+}
+@-webkit-keyframes comeon {
+	0%{opacity: 1;bottom: 0px;}
+	95% {opacity: 0;bottom: 0px;}
+	100% {opacity: 0;bottom: -1000px;}
+}
+.comeon p{
+	margin: 0px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    color: #EFC585;
+    text-shadow: 0px 0px 10px rgb(232, 200, 107);
+    letter-spacing: 2px;
+	text-align: center;
+}
+
+.coming {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+}
+
+.soon {
+	position: fixed !important;
+    bottom: 0px;
+    left: 0px;
+	padding: 0 15px;
+}
+.coming p{
+	margin: 0px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    color: #EFC585;
+    text-shadow: 0px 0px 10px rgb(232, 200, 107);
+    letter-spacing: 2px;
+	text-align: center;
+}
+
+			#content {
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 100%;
+				height: 3px;
+				margin: auto;
+				background: #000;
+				box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+				border-radius: 2px;
+			}
+			.fullwidth .expand {
+				width: 100%;
+				height: 1px;
+				margin: 1px 0;
+				background: #EFC585;
+				border-radius: 2px;
+				box-shadow: 0px 0px 10px 2px rgba(232, 200, 107, 0.7);
+				animation: fullexpand 3s ease-out;
+				-webkit-animation: fullexpand 4s ease-out;
+			}
+			@keyframes fullexpand {
+				0% {
+					width:0px;
+				}
+				100% {
+					width:100%;
+				}
+			}
+			@-webkit-keyframes fullexpand {
+				0% {
+					width:0px;
+				}
+				100% {
+					width:100%;
+				}
+			}
+
+
+
+			.timing {
+				width: 100%;
+			    height: 3px;
+			    background: #000;
+			    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.25);
+			    border-radius: 2px;
+			}
+			.timing .timing-expand {
+				width: 0%;
+				height: 1px;
+				margin: 1px 0;
+				background: #EFC585;
+				border-radius: 2px;
+				box-shadow: 0px 0px 10px 2px rgba(232, 200, 107, 0.7);
+				transition: width 0.5s;	/* Safari 和 Chrome */
+				-webkit-transition: width 0.5s;	/* Safari 和 Chrome */
+			}
+
+
+
+.result-page{
+	padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.result-bg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000 url(../image/shiledlogo_bg.png) no-repeat 50% 50%;
+    background-size: 100%;
+    z-index: 0;
+}
+.the-avenger{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	z-index: 2;
+}
+.avenger{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.avenger-n{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.avenger div{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.avenger img {
+	width:100%;
+}
+
+.avenger-name img{
+	padding: 5%;
+}
+
+.mainname-box{
+	width: 100%;
+	text-align: center;
+}
+.mainname{
+    display: inline-block;
+	margin: 2% 0;
+    padding: 2% 4% !important;
+    background-color: #7D430F;
+    border: 1px solid #F1BC58;
+    color: #DCD6D6;
+    font-size: 12px;
+    border-radius: 100px;
+}
+
+.shiled-logo-end{
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	width:100%;
+	height: 100%;
+	background-image: url(../image/shiledlogo.png);
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: 50%;
+	animation: shiled 0.5s ease-out;	/* Safari 和 Chrome */
+	animation-fill-mode:forwards;
+	-webkit-animation: shiled 0.5s ease-out;	/* Safari 和 Chrome */
+	-webkit-animation-fill-mode:forwards;
+}
+@keyframes shiled 
+{
+from {background-size: 90%;opacity: 1;}
+to {background-size: 75%;opacity: 0;}
+}
+@-webkit-keyframes shiled /* Safari 和 Chrome */
+{
+from {background-size: 90%;opacity: 1;}
+to {background-size: 75%;opacity: 0;}
+}
+
+.radarbox {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5%;
+    transition: top 2s;	/* Safari 和 Chrome */
+    -webkit-transition: top 2s;	/* Safari 和 Chrome */
+}
+.hiddenradarbox{
+	top: -1000px !important;
+}
+.radar{
+	position: relative;
+	width: 100%;
+	height: 94%;
+	text-align: center;
+    background-color: rgba(0, 107, 144, 0.38);
+    border: 1px solid #42A0E0;
+    box-shadow: 0px 0px 10px #ccc inset;
+}
+.radar p{
+    position: absolute;
+	bottom: 6%;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 5px 10px 35px 10px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    text-indent: 2em;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.herointrobox{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5%;
+    transition: top 2s;
+    -webkit-transition: top 2s;
+}
+.herointro{
+    position: relative;
+	padding: 5px 5px 35px 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 107, 144, 0.38);
+    border: 1px solid #42A0E0;
+    box-shadow: 0px 0px 10px #ccc inset;
+}
+.herointro .media {
+	margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: rgba(154, 115, 44, 0.38);
+    border: 1px solid #C5A750;
+    box-shadow: 0px 0px 10px #E6B76F inset;
+}
+.herointro .media .media-body{
+	vertical-align: middle;
+}
+.guide {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    margin: 0px;
+    width: 100%;
+}
+.task{
+	display: table;
+	text-align: center;
+}
+.taskbtn{
+	margin: auto;
+	height: 40px;
+    background-color: rgba(154, 115, 44, 0.38);
+    border: 1px solid #C5A750;
+    box-shadow: 0px 0px 10px #E6B76F inset;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    border-radius: 60px;
+    background-image: url(../image/btn.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px 50%;
+    animation: fenxiang 0.5s ease-out infinite alternate;
+    -webkit-animation: fenxiang 0.5s ease-out infinite alternate;
+}
+.archives{
+	display: table;
+	text-align: center;
+}
+.archivesbtn{
+	margin: auto;
+	height: 40px;
+    background-color: rgba(154, 115, 44, 0.38);
+    border: 1px solid #C5A750;
+    box-shadow: 0px 0px 10px #E6B76F inset;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    border-radius: 60px;
+    background-image: url(../image/btn.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px 50%;
+    animation: fenxiang 0.5s ease-out infinite alternate;
+    -webkit-animation: fenxiang 0.5s ease-out infinite alternate;
+}
+.realman{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: 50% 0;
+    opacity: 0.5;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #fff inset;
+}
+.talk{
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.connecting{
+	color: #fff;
+	text-shadow:0px 0px 5px #fff;
+}
+.herointro p{
+	position: absolute;
+	bottom: 0px;
+	padding: 0 5px 35px 10px;
+	margin: 0px;
+	text-indent: 2em;
+	color: #fff;
+	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+	line-height: 26px;
+	letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.result-box{
+    padding: 1% 4% !important;
+    text-indent: 1em;
+}
+.result-box2{
+	padding: 10px 20px !important;
+	height: 94%;
+	background-color: rgba(0, 107, 144, 0.38);
+	border: 1px solid #42A0E0;
+	box-shadow: 0px 0px 10px #ccc inset;
+}
+.result{
+    padding: 2% 4%;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            color: #fff;
+            -webkit-animation: blinkline 0.7s infinite;
+            animation: blinkline 0.7s infinite;
+        }
+        @keyframes blinkline{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blinkline{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+
+
+.lastbtn {
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    width: 100%;
+    height: 60px;
+    color: #7CF3DD;
+    text-shadow: 0px 0px 3px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, #000000));
+    z-index: 3;
+}
+.guanzhu {
+    position: absolute;
+    left: 10px;
+	padding: 6px 12px 6px 24px;
+	border-radius: 60px;
+    background-color: rgba(29, 101, 103, 0.66);
+    background-image: url(../image/btn.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px 50%;
+    box-shadow: 0px 0px 10px 0px rgba(33, 162, 159, 0.75) inset;
+    animation: fenxiang 0.5s ease-out infinite alternate;	/* Safari 和 Chrome */
+	-webkit-animation: fenxiang 0.5s ease-out infinite alternate;	/* Safari 和 Chrome */
+}
+
+
+.fenxiang{
+	position: absolute;
+	right: 10px;
+    padding: 6px 12px 6px 24px;
+    border-radius: 60px;
+    background-color: rgba(29, 101, 103, 0.66);
+    background-image: url(../image/btn.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px 50%;
+    box-shadow: 0px 0px 10px 0px rgba(33, 162, 159, 0.75) inset;
+    animation: fenxiang 0.5s ease-out infinite alternate;	/* Safari 和 Chrome */
+    -webkit-animation: fenxiang 0.5s ease-out infinite alternate;	/* Safari 和 Chrome */
+}
+@keyframes fenxiang /* Safari 和 Chrome */
+{
+from {box-shadow: 0px 0px 10px #E6B76F inset;}
+to {box-shadow: 0px 0px 10px #443216 inset;}
+}
+@-webkit-keyframes fenxiang /* Safari 和 Chrome */
+{
+from {box-shadow: 0px 0px 10px 0px rgba(33, 162, 159, 0.75) inset;}
+to {box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75) inset;}
+}
+
+.guanzhubox{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 10;
+}
+.fury img{
+	width: 75%;
+}
+.fury p {
+	position: absolute;
+	right: 5px;
+	top:5px;
+    padding: 8%;
+    line-height: 28px;
+    color: #fff;
+}
+.fury .qrcode{
+	padding-top: 20%;
+	width: 100%;
+	text-align: center;
+}
+.fury .qrcode img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.5) inset;
+}
+
+.exitbox{
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+}
+.exit{
+	padding: 10px 20px;
+	color: #666;
+	letter-spacing: 4px;
+}
+
+.fenxiangbox{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 3;
+}
+.hill img{
+	width: 55%;
+}
+.hill .p {
+	position: absolute;
+	right: 5px;
+	top:5px;
+    padding: 2%;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.hill .p p{
+	animation: hill 0.5s ease-out ;	/* Safari 和 Chrome */
+    -webkit-animation: hill 0.5s ease-out ;	/* Safari 和 Chrome */
+}
+@keyframes hill /* Safari 和 Chrome */
+{
+from {transform: rotateX(-90deg);}
+to {transform: rotateX(0deg);}
+}
+@-webkit-keyframes hill /* Safari 和 Chrome */
+{
+from {-webkit-transform: rotateX(-90deg);}
+to {-webkit-transform: rotateX(0deg);}
+}
+
+.back {
+	position: fixed;
+	left: 15px;
+	bottom: 0px;
+	padding: 3% 10px 4% 10px;
+	margin-top: 2%;
+	color: #EFC585;
+	text-shadow: 0px 0px 10px rgb(232, 200, 107);
+	background-color: rgba(232, 200, 107, 0.3);
+	border-top: 1px solid rgb(232, 200, 107);
+	border-left: 1px solid rgb(232, 200, 107);
+	border-right: 1px solid rgb(232, 200, 107);
+	border-radius: 0px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.swiper-pagination {
+    position: fixed;
+    width: 100%;
+    bottom: 11%;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2% 4% !important;
+}
+
+.swiper-pagination-clickable .tab1{
+	display: none;
+}
+
+.miniChart{
+    display: inline-block;
+    padding-left: 40px !important;
+    padding-right: 10px !important;
+    color: #CE5481;
+    font-size: 12px;
+    border-radius: 100px;
+    background-image: url(../image/leida.png);
+    background-position: 5px 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #CE5481;
+    box-shadow: 0px 0px 10px inset;
+}
+
+.personality-box{
+	padding: 3% 6%;
+    width: 100%;
+}
+.personality{
+    margin-top: 2%;
+    margin-bottom: 8%;
+    width: 100%;
+    height: 20%;
+    border-radius: 8px;
+    -webkit-transform: skew(10deg,0deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.youravenger{
+	background-color: rgba(0, 0, 0, 0.2);
+    background-position: -40px 50%;
+    border: 1px solid rgba(113, 113, 113, 0.5);
+}
+.avenger-redar{
+    background-color: #000;
+    background-image: url(../image/redarbg.png);
+    background-position: -20px 50%;
+	border: 1px solid #AB557D;
+    box-shadow: 0px 0px 50px #AB557D inset;
+    color: #AB557D;
+}
+
+.avenger-intro{
+	border: 1px solid #595E61;
+    background-color: #000;
+    background-image: url(../image/avengerlogo.png);
+    background-position: -20px 50%;
+}
+.personality p {
+	margin: 0;
+    padding-top: 5%;
+    padding-right: 5%;
+    text-align: right;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 10px #000;
+    -webkit-transform: skew(-10deg,0deg);
+}
+
+.testform{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 107, 144, 0.38);
+    border: 1px solid #42A0E0;
+    box-shadow: 0px 0px 10px #ccc inset;
+    z-index: 2;
+}
+.testform form{
+	position: absolute;
+	bottom: 0px;
+	padding: 5px 10px 35px 10px;
+	width: 100%;
+}
+.testform form p{
+	color: #fff;
+	letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.form-group input{
+	height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #338EA2;
+    box-shadow: 0px 0px 5px #3E7F9A inset;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.form-group input:focus{
+	text-shadow: 0px 0px 10px #fff;
+}
+
+.swiper-next{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+	height: 24px;
+    text-align: center;
+    color: #fff;
+	letter-spacing: 2px;
+    animation: swipernext .5s ease-in-out infinite alternate;
+	-webkit-animation: swipernext .5s ease-in-out infinite alternate;	/* Safari 和 Chrome */
+}
+@keyframes swipernext 
+{
+	from{transform: translate(0px,-10px);}
+	top{transform: translate(0px,20px);}
+}
+@-webkit-keyframes swipernext /* Safari 和 Chrome */
+{
+	from{-webkit-transform: translate(0px,-10px);}
+	top{-webkit-transform: translate(0px,20px);}
+}
+
+
+.swiper-prev{
+	padding-top: 15px;
+	width: 100%;
+	height: 24px;
+	text-align: center;
+    color: #fff;
+    /*opacity: 0.5;*/
+    /*animation: swiperprev .5s ease-in-out infinite alternate;*/
+	/*-webkit-animation: swiperprev .5s ease-in-out infinite alternate;*/	/* Safari 和 Chrome */
+}
+
+/*@keyframes swiperprev 
+{
+	from{transform: translate(0px,-20px);}
+	top{transform: translate(0px,10px);}
+}
+@-webkit-keyframes swiperprev 
+{
+	from{-webkit-transform: translate(0px,-20px);}
+	top{-webkit-transform: translate(0px,10px);}
+}*/
+
+.swiper-slide{
+	position: relative;
+    background: url(../image/bg_line.png) 50% 50%;
+}
+
+.box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.post{
+	width: 100%;
+	border: 1px solid rgba(218, 125, 9, 0.25);
+	box-shadow: 0 7px 0 rgba(165, 86, 13, 0.3), 0 8px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 7px 0 rgba(165, 86, 13, 0.34), 0 8px 3px rgba(0, 0, 0, 0.2);
+	color: #D6B065;
+	background-color: rgba(183, 98, 7, 0.51);
+}
+.testform form .post{
+	margin-top: 15px;
+	height: 50px;
+}
+.testform-btn{
+    position: absolute;
+    bottom: 3%;
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.opacity{
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;	/* Safari 和 Chrome */
+}
+
+.closeform{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 32px;
+    color: #85C2DC;
+    background-color: rgba(0, 0, 0, 0.71);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63) inset;
+    border: 1px solid rgba(59, 158, 208, 0.43);
+}
+
+.ironman{
+	background-image: url(../image/realman/ironman.jpg);
+}
+.thor{
+	background-image: url(../image/realman/thor.jpg);
+}
+.blackwidow{
+	background-image: url(../image/realman/blackwidow.jpg);
+}
+.hulk{
+	background-image: url(../image/realman/hulk.jpg);
+}
+.cap{
+	background-image: url(../image/realman/cap.jpg);
+}
+.loki{
+	background-image: url(../image/realman/loki.jpg);
+}
+.testpic{
+	width: 100%;
+	padding: 20px 0;
+}
+.testpic .pic{
+	margin: auto;
+	width: 85%;
+	height: 85%;
+	background-image: url(../image/testbook.png);
+    background-size: 100%;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+}
+.qrcodebox{
+	display: table;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 1;
+}
+.qrcode{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.qrcode img{
+	width: 50%;
+}
+
+.qrcodehidden{
+    position: fixed;
+    bottom: 30px;
+    left: 0px;
+    padding: 0px 30px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    z-index: 20;
+}
+.qrcodehiddenbtn{
+	margin: auto;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(154, 115, 44, 0.38);
+    border: 1px solid #C5A750;
+    box-shadow: 0px 0px 10px #E6B76F inset;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    border-radius: 60px;
+    background-image: url(../image/btn.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: -20px 50%;
+    z-index: 2;
+    animation: fenxiang 0.5s ease-out infinite alternate;
+    -webkit-animation: fenxiang 0.5s ease-out infinite alternate;
+}
+
+.talkbox{
+    margin: 5px;
+    padding: 4px 7px;
+    background-color: rgba(0, 0, 0, 0.34);
+    font-size: 12px;
+}
+.label-danger {
+    background-color: rgb(241, 241, 241);
+    color: #265F75;
+    text-shadow: none;
+}
